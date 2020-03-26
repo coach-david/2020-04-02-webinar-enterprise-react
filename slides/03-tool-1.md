@@ -21,7 +21,7 @@ In combination with:
 ### Husky
 
 ```shell
-yarn add pretty-quick husky
+yarn add prettier pretty-quick husky
 ```
 
 package.json
@@ -32,4 +32,13 @@ package.json
     "pre-commit": "pretty-quick --staged"
   }
 },
+```
+
+.prettierrc
+
+```json
+{
+  "singleQuote": true,
+  "trailingComma": "es5"
+}
 ```
