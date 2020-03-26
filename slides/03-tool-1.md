@@ -27,6 +27,9 @@ yarn add prettier pretty-quick husky
 package.json
 
 ```json
+"scripts": {
+  "format:all": "prettier --write \"src/**/*.js*|ts*\""
+},
 "husky": {
   "hooks": {
     "pre-commit": "pretty-quick --staged"
