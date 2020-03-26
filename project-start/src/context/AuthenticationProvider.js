@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import AuthContext from '../context/AuthContext';
+import AuthContext from './AuthContext';
 
 const STORAGE_KEY = 'USR';
 
