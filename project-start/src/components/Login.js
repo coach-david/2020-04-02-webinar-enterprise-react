@@ -2,10 +2,14 @@ import React from "react";
 import {FormControl, FormLabel, FormErrorMessage, Input, Box} from "@chakra-ui/core";
 import {useForm} from "react-hook-form";
 import Button from "./Button";
+import useLogin from "../hooks/useLogin";
 
 const Login = () => {
   const { register: loginForm, handleSubmit, errors } = useForm();
-  const onSubmit = data => { console.log(data) };
+  const login =useLogin();
+  const onSubmit = data => {
+    login(data.code)
+  };
 
   return <Box maxWidth={500} p={4} margin="100px auto">
   <form onSubmit={handleSubmit(onSubmit)}>
