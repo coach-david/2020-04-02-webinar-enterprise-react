@@ -1,4 +1,4 @@
-# 🎨 Prettier
+# ✨ Prettier
 
 - Prettier is an **automatic** code formatter
 - Enforce consistent code style across the whole codebase

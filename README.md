@@ -1,4 +1,4 @@
-# Enterprise-scale React with 5 tips & tools
+# ⚛️ Enterprise-scale React with 5 tips & tools
 
 In this practical 1-hour lunch & learn session, we'll take a small application to the next level in terms of scalability and maintainability. We prepare the application to last for the next decade, ready to face challenges like changing scope, evolving technologies and rotating team members.
 
