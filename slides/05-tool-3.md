@@ -11,6 +11,10 @@
 
 ## Add Storybook
 
+[Get started](https://www.learnstorybook.com/intro-to-storybook/react/en/get-started/)
+
 ```shell
 npx -p @storybook/cli sb init
+
+yarn storybook
 ```
