@@ -8,3 +8,9 @@
 ![Storybook](./images/storybook-relationship.jpg)
 
 ![Design System Contents](./images/storybook-design-system-contents.jpg)
+
+## Add Storybook
+
+```shell
+npx -p @storybook/cli sb init
+```
