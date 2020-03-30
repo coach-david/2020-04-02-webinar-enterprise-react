@@ -62,6 +62,9 @@ yarn lint
 # Prettier
 yarn format:check
 yarn format:write
+
+# Add lib
+yarn nx g @nrwl/react:lib shell --directory=photo-print --pascalCaseFiles --tags='scope:photo-print, type:shell'
 ```
 
 ### Nx tag configuration
