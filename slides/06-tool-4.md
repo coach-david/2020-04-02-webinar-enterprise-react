@@ -50,7 +50,18 @@ We define following categories for libraries:
 ### Getting started
 
 ```shell
+# Create new workspace
 npx create-nx-workspace@latest
+
+# See dependency graph
+yarn dep-graph
+
+# Lint
+yarn lint
+
+# Prettier
+yarn format:check
+yarn format:write
 ```
 
 ### Nx tag configuration
