@@ -1,6 +1,9 @@
 # ✨ Prettier
 
 - Prettier is an **automatic** code formatter
+
+## Obvious benefits
+
 - Enforce consistent code style across the whole codebase
 
 In combination with:
@@ -9,7 +12,7 @@ In combination with:
 - Husky & pretty-quick: Automatically format your code on commit
 - _Lightweight_ ESLint rules: Don't let ESLint get in the way of your development speed.
 
-### Side effects of using Prettier
+## Less obvious benefits of working with types
 
 - If it can't be prettified, your code is broken!
   => Shorten "Code to Bug discovery"-feedback loop

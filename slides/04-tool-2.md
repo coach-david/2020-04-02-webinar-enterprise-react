@@ -7,7 +7,7 @@
 - IDE / compile time errors instead of runtime errors
   => Shorten "Code to Bug discovery"-feedback loop
 
-## Not so obvious benefits of working with types
+## Less obvious benefits of working with types
 
 - Leverage Type-driven development to let your types check for **FUNCTIONAL** errors.
 

@@ -17,7 +17,7 @@ const PhotoForm= ({ photo }) => {
   const {addToCart} = useCart();
 
   const onSubmit = data => {
-    addToCart({id: photo.url, url:photo.url, format:data.format, amount: +data.amount});
+    addToCart({id: photo.url, url:photo.url, format:data.format, quantity: +data.quantity});
   };
 
   return <form onSubmit={handleSubmit(onSubmit)}>
@@ -31,9 +31,9 @@ const PhotoForm= ({ photo }) => {
         </Select>
       </FormControl>
       <FormControl>
-        <FormLabel htmlFor="format">Amount</FormLabel>
+        <FormLabel htmlFor="format">Quantity</FormLabel>
         <NumberInput defaultValue={1} min={1} max={20}>
-          <NumberInputField id="amount" name="amount" ref={register} />
+          <NumberInputField id="quantity" name="quantity" ref={register} />
           <NumberInputStepper>
             <NumberIncrementStepper />
             <NumberDecrementStepper />

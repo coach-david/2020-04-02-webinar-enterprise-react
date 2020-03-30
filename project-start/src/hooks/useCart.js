@@ -6,13 +6,13 @@ const findCartItemIndex = (cart, id) => {
   return cart.findIndex(product => product.id === id);
 };
 
-const addOrUpdateCart = (cart, {id, url, format, amount}) => {
+const addOrUpdateCart = (cart, {id, url, format, quantity}) => {
   const foundCartItemIndex = findCartItemIndex(cart, id);
-  if (foundCartItemIndex === -1) return [...cart, {id, url, format, amount}];
+  if (foundCartItemIndex === -1) return [...cart, {id, url, format, quantity}];
 
   const updatedCartItem = {
     ...cart[foundCartItemIndex],
-    amount: cart[foundCartItemIndex].amount + amount,
+    quantity: cart[foundCartItemIndex].quantity + quantity,
   };
 
   return set(cart, [foundCartItemIndex], updatedCartItem);
@@ -21,8 +21,8 @@ const addOrUpdateCart = (cart, {id, url, format, amount}) => {
 const useCart = () => {
   const {cart, setCart} = useContext(CartContext);
 
-  function addToCart({id, url, format, amount}) {
-    const updatedCart = addOrUpdateCart(cart, {id, url, format, amount});
+  function addToCart({id, url, format, quantity}) {
+    const updatedCart = addOrUpdateCart(cart, {id, url, format, quantity});
     setCart(updatedCart);
   }
   console.log('cart', cart);
