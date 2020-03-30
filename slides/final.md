@@ -1,16 +1,29 @@
 🧰 Tools
 
-- ✨Prettier
-  - Keep your codebase consistent
-  - Changing team members / big teams
-- 🏷️TypeScript
-  - Living documentation
-  - Prevent breaking stuff
-- 📚Storybook
-  - Living documentation
-  - Changing team members / big teams
-- 📦Separation of Concerns
-  - Large codebase
-  - Share code
-- ✅Cypress
-  - Prevent breaking stuff
+- How can I make my code easy to change?
+
+  - 📦 Separation of Concerns (Nx)
+  - 🏷️ TypeScript
+
+- How to ensure I won't break anything?
+
+  - ✅ Cypress
+  - 🏷️ TypeScript
+  - ✨ Prettier
+  - 📚 Storybook
+
+- How can I share my code with other teams & applications?
+
+  - 📚 Storybook
+  - 📦 Separation of Concerns (Nx)
+  - ✨ Prettier
+
+- How can I keep my codebase consistent?
+
+  - ✨ Prettier
+  - 📦 Separation of Concerns (Nx)
+
+- How can I write documentation which is always up-to-date?
+
+  - 📚 Storybook
+  - 🏷️ TypeScript
