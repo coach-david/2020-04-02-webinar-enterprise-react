@@ -1,0 +1,22 @@
+{
+  "npmScope": "project-nx",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "photo-print": {
+      "tags": []
+    },
+    "photo-print-e2e": {
+      "tags": [],
+      "implicitDependencies": ["photo-print"]
+    }
+  }
+}
