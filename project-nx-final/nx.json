@@ -12,11 +12,29 @@
   },
   "projects": {
     "photo-print": {
-      "tags": []
+      "tags": ["scope:app"]
     },
     "photo-print-e2e": {
-      "tags": [],
+      "tags": ["scope:e2e"],
       "implicitDependencies": ["photo-print"]
+    },
+    "photo-print-shell": {
+      "tags": ["scope:photo-print", "type:shell"]
+    },
+    "photo-print-feature-catalog": {
+      "tags": ["scope:photo-print", "type:feature"]
+    },
+    "photo-print-feature-checkout": {
+      "tags": ["scope:photo-print", "type:feature"]
+    },
+    "photo-print-feature-cart": {
+      "tags": ["scope:photo-print", "type:feature"]
+    },
+    "shared-feature-auth": {
+      "tags": ["scope:shared", "type:feature"]
+    },
+    "shared-ui": {
+      "tags": ["scope:shared", "type:ui"]
     }
   }
 }

@@ -15,7 +15,22 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@project-nx/photo-print/shell": ["libs/photo-print/shell/src/index.ts"],
+      "@project-nx/photo-print/feature-catalog": [
+        "libs/photo-print/feature-catalog/src/index.ts"
+      ],
+      "@project-nx/photo-print/feature-checkout": [
+        "libs/photo-print/feature-checkout/src/index.ts"
+      ],
+      "@project-nx/photo-print/feature-cart": [
+        "libs/photo-print/feature-cart/src/index.ts"
+      ],
+      "@project-nx/shared/feature-auth": [
+        "libs/shared/feature-auth/src/index.ts"
+      ],
+      "@project-nx/shared/ui": ["libs/shared/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

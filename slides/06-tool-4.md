@@ -82,7 +82,7 @@ yarn nx g @nrwl/react:lib shell --directory=photo-print --pascalCaseFiles --tags
           { "sourceTag": "scope:app", "onlyDependOnLibsWithTags": ["type:shell"] },
           { "sourceTag": "scope:shared", "onlyDependOnLibsWithTags": ["scope:shared"] },
           { "sourceTag": "type:shell", "onlyDependOnLibsWithTags": ["type:feature", "type:util"] },
-          { "sourceTag": "type:feature", "onlyDependOnLibsWithTags": ["type:data-access", "type:util", "type:ui"] },
+          { "sourceTag": "type:feature", "onlyDependOnLibsWithTags": ["type:data-access", "type:feature", "type:util", "type:ui"] },
           { "sourceTag": "type:util", "onlyDependOnLibsWithTags": ["type:util"] }
         ]
       }

@@ -109,6 +109,183 @@
           }
         }
       }
+    },
+    "photo-print-shell": {
+      "root": "libs/photo-print/shell",
+      "sourceRoot": "libs/photo-print/shell/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/photo-print/shell/.eslintrc",
+            "tsConfig": [
+              "libs/photo-print/shell/tsconfig.lib.json",
+              "libs/photo-print/shell/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/photo-print/shell/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/photo-print/shell/jest.config.js",
+            "tsConfig": "libs/photo-print/shell/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "photo-print-feature-catalog": {
+      "root": "libs/photo-print/feature-catalog",
+      "sourceRoot": "libs/photo-print/feature-catalog/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/photo-print/feature-catalog/.eslintrc",
+            "tsConfig": [
+              "libs/photo-print/feature-catalog/tsconfig.lib.json",
+              "libs/photo-print/feature-catalog/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/photo-print/feature-catalog/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/photo-print/feature-catalog/jest.config.js",
+            "tsConfig": "libs/photo-print/feature-catalog/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "photo-print-feature-checkout": {
+      "root": "libs/photo-print/feature-checkout",
+      "sourceRoot": "libs/photo-print/feature-checkout/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/photo-print/feature-checkout/.eslintrc",
+            "tsConfig": [
+              "libs/photo-print/feature-checkout/tsconfig.lib.json",
+              "libs/photo-print/feature-checkout/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/photo-print/feature-checkout/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/photo-print/feature-checkout/jest.config.js",
+            "tsConfig": "libs/photo-print/feature-checkout/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "photo-print-feature-cart": {
+      "root": "libs/photo-print/feature-cart",
+      "sourceRoot": "libs/photo-print/feature-cart/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/photo-print/feature-cart/.eslintrc",
+            "tsConfig": [
+              "libs/photo-print/feature-cart/tsconfig.lib.json",
+              "libs/photo-print/feature-cart/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/photo-print/feature-cart/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/photo-print/feature-cart/jest.config.js",
+            "tsConfig": "libs/photo-print/feature-cart/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "shared-feature-auth": {
+      "root": "libs/shared/feature-auth",
+      "sourceRoot": "libs/shared/feature-auth/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/shared/feature-auth/.eslintrc",
+            "tsConfig": [
+              "libs/shared/feature-auth/tsconfig.lib.json",
+              "libs/shared/feature-auth/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/feature-auth/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/feature-auth/jest.config.js",
+            "tsConfig": "libs/shared/feature-auth/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "shared-ui": {
+      "root": "libs/shared/ui",
+      "sourceRoot": "libs/shared/ui/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/shared/ui/.eslintrc",
+            "tsConfig": [
+              "libs/shared/ui/tsconfig.lib.json",
+              "libs/shared/ui/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/ui/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/ui/jest.config.js",
+            "tsConfig": "libs/shared/ui/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

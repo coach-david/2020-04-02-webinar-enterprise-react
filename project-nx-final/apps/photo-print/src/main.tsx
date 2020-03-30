@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { PhotoPrintShell } from '@project-nx/photo-print/shell';
 
-import App from './app/app';
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<PhotoPrintShell />, document.getElementById('root'));
