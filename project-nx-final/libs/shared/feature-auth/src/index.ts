@@ -1,1 +1,2 @@
-export { default as SharedFeatureAuth } from './lib/SharedFeatureAuth';
+export * from './lib/authentication-provider/AuthenticationProvider';
+export { default as LoginForm } from './lib/components/LoginForm';

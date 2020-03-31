@@ -2,4 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { PhotoPrintShell } from '@project-nx/photo-print/shell';
 
-ReactDOM.render(<PhotoPrintShell />, document.getElementById('root'));
+ReactDOM.render(
+  <React.StrictMode>
+    <PhotoPrintShell />
+  </React.StrictMode>,
+  document.getElementById('root')
+);

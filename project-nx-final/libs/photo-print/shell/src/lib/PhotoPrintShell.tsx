@@ -1,18 +1,25 @@
 import React from 'react';
-import { SharedFeatureAuth } from '@project-nx/shared/feature-auth';
-import { PhotoPrintFeatureCatalog } from '@project-nx/photo-print/feature-catalog';
-import { PhotoPrintFeatureCheckout } from '@project-nx/photo-print/feature-checkout';
+import { BrowserRouter } from 'react-router-dom';
+import {
+  AuthenticationProvider,
+} from '@project-nx/shared/feature-auth';
+import { Theme } from './theme/Theme';
+import LoggedOutApp from './LoggedOutApp';
+import LoggedInApp from './LoggedInApp';
 
 /* eslint-disable-next-line */
 export interface PhotoPrintShellProps {}
 
 export const PhotoPrintShell = (props: PhotoPrintShellProps) => {
   return (
-    <>
-      <SharedFeatureAuth></SharedFeatureAuth>
-      <PhotoPrintFeatureCatalog></PhotoPrintFeatureCatalog>
-      <PhotoPrintFeatureCheckout></PhotoPrintFeatureCheckout>
-    </>
+    <Theme>
+      <BrowserRouter>
+        <AuthenticationProvider
+          loggedInApp={<LoggedInApp />}
+          loggedOutApp={<LoggedOutApp />}
+        />
+      </BrowserRouter>
+    </Theme>
   );
 };
 
