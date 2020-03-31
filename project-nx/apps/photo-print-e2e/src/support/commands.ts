@@ -10,13 +10,13 @@
 // eslint-disable-next-line @typescript-eslint/no-namespace
 declare namespace Cypress {
   interface Chainable<Subject> {
-    login(email: string, password: string): void;
+    login(code: string): void;
   }
 }
 //
 // -- This is a parent command --
-Cypress.Commands.add('login', (email, password) => {
-  console.log('Custom command example: Login', email, password);
+Cypress.Commands.add('login', (code) => {
+  console.log('Custom command example: Login', code);
 });
 //
 // -- This is a child command --

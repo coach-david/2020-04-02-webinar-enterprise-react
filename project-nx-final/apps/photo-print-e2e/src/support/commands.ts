@@ -1,3 +1,5 @@
+import { getCodeInput, getLoginButton } from './app.po';
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -7,16 +9,18 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
+
 // eslint-disable-next-line @typescript-eslint/no-namespace
 declare namespace Cypress {
   interface Chainable<Subject> {
-    login(email: string, password: string): void;
+    login(loginCode: string): void;
   }
 }
 //
 // -- This is a parent command --
-Cypress.Commands.add('login', (email, password) => {
-  console.log('Custom command example: Login', email, password);
+Cypress.Commands.add('login', (loginCode) => {
+  getCodeInput().type(loginCode);
+  getLoginButton().click();
 });
 //
 // -- This is a child command --
