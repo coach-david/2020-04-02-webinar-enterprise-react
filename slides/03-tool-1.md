@@ -21,7 +21,7 @@ In combination with:
   Let the tool work for you!
   => Improve code writing speed
 
-### Configuration
+## Configuration
 
 ```shell
 yarn add prettier pretty-quick husky
